@@ -134,6 +134,21 @@
             "path": "../node_modules/aurelia-testing/dist/amd",
             "main": "aurelia-testing",
             "env": "dev"
+          },
+          {
+            "name": "react",
+            "path": "../node_modules/react/dist",
+            "main": "react"
+          },
+          {
+            "name": "react-dom",
+            "path": "../node_modules/react-dom/dist",
+            "main": "react-dom"
+          },
+          {
+            "name": "office-ui-fabric-react",
+            "path": "../node_modules/office-ui-fabric-react/dist",
+            "main": "office-ui-fabric-react"
           }
         ]
       }

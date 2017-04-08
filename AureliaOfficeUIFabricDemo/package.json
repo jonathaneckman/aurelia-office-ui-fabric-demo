@@ -8,9 +8,16 @@
   },
   "license": "MIT",
   "dependencies": {
-    "aurelia-bootstrapper": "^2.1.0",
+    "@types/react-dom": "^0.14.23",
     "aurelia-animator-css": "^1.0.1",
+    "aurelia-bootstrapper": "^2.1.0",
     "bluebird": "^3.4.1",
+    "bootstrap": "v4.0.0-alpha.6",
+    "office-ui-fabric-core": "^6.0.1",
+    "office-ui-fabric-js": "^1.4.0",
+    "office-ui-fabric-react": "^2.15.0",
+    "react": "^15.5.3",
+    "react-dom": "^15.5.3",
     "requirejs": "^2.3.2",
     "text": "github:requirejs/text#latest"
   },
