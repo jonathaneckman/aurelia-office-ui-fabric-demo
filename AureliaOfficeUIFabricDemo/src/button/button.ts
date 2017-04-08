@@ -1,15 +1,7 @@
-﻿import * as React from 'react';
+﻿import { customElement, autoinject, bindable, noView } from 'aurelia-framework';
+import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { customElement, autoinject, bindable, noView } from 'aurelia-framework';
-import { Button } from 'office-ui-fabric-react';
-
-
-//{
-//    "name": "office-ui-fabric-react",
-//        "path": "../node_modules/office-ui-fabric-react/lib-amd",
-//            "main": "index"
-//}
-
+import * as Fabric from 'office-ui-fabric-react';
 
 @noView()
 @autoinject()
@@ -26,7 +18,7 @@ export class ReactElement {
 
     render() {
         this.reactComponent = ReactDOM.render(
-            React.createElement(Button, {}, null),
+            React.createElement(Fabric.Button, {}, null),
             this.element
         );
     }

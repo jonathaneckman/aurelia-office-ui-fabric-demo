@@ -96,6 +96,9 @@
           "node_modules/aurelia-cli/lib/resources/scripts/configure-bluebird.js",
           "node_modules/requirejs/require.js"
         ],
+        "append": [
+          "node_modules/office-ui-fabric-react/dist/office-ui-fabric-react.js"
+        ],
         "dependencies": [
           "aurelia-binding",
           "aurelia-bootstrapper",
@@ -138,17 +141,20 @@
           {
             "name": "react",
             "path": "../node_modules/react/dist",
-            "main": "react"
+            "main": "react",
+            "exports": "React"
           },
           {
             "name": "react-dom",
             "path": "../node_modules/react-dom/dist",
-            "main": "react-dom"
+            "main": "react-dom",
+            "exports": "ReactDOM"
           },
           {
             "name": "office-ui-fabric-react",
             "path": "../node_modules/office-ui-fabric-react/dist",
-            "main": "office-ui-fabric-react"
+            "main": "office-ui-fabric-react",
+            "deps": [ "react", "react-dom" ]
           }
         ]
       }

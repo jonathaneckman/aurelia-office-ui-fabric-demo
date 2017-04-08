@@ -8,6 +8,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "@types/react": "^15.0.21",
     "@types/react-dom": "^0.14.23",
     "aurelia-animator-css": "^1.0.1",
     "aurelia-bootstrapper": "^2.1.0",
@@ -42,7 +43,7 @@
     "gulp-typescript": "^3.1.4",
     "gulp-tslint": "^5.0.0",
     "tslint": "^3.11.0",
-    "typescript": ">=1.9.0-dev || ^2.0.0",
+    "typescript": "^2.2.2",
     "@types/node": "^6.0.45",
     "gulp-sass": "^2.3.2",
     "jasmine-core": "^2.4.1",
