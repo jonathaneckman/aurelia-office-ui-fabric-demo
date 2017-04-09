@@ -154,7 +154,8 @@
             "name": "office-ui-fabric-react",
             "path": "../node_modules/office-ui-fabric-react/dist",
             "main": "office-ui-fabric-react",
-            "deps": [ "react", "react-dom" ]
+            "deps": [ "react", "react-dom" ],
+            "exports": [ "React", "ReactDOM" ]
           }
         ]
       }

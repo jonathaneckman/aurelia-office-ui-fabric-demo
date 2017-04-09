@@ -1,14 +1,15 @@
-﻿import { customElement, autoinject, bindable, noView } from 'aurelia-framework';
+﻿import { customElement, autoinject, bindable, noView, bindingMode } from 'aurelia-framework';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import * as Fabric from 'office-ui-fabric-react';
 
 @noView()
 @autoinject()
-//@bindable('data')
 @customElement('au-ms-button')
 export class ReactElement {
 
+    @bindable({ defaultBindingMode: bindingMode.oneWay }) data = {
+        text: 'Hello World!'
+    };
     reactComponent = {};
     element: Element;
 
@@ -18,7 +19,7 @@ export class ReactElement {
 
     render() {
         this.reactComponent = ReactDOM.render(
-            React.createElement(Fabric.Button, {}, null),
+            React.createElement(Fabric.Button, this.data, null),
             this.element
         );
     }

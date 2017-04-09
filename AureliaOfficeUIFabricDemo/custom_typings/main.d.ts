@@ -1,1 +1,1 @@
-﻿declare var Fabric: any;
+﻿declare var Fabric;
